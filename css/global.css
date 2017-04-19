@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
 #bg {
     position: fixed;
     left: 0;
@@ -23,12 +27,12 @@
 
 #nav-menu {
     position: fixed;
-    right: 10px;
-    top: 5px;
+    right: 20px;
+    top: 10px;
     margin: 0;
     text-align: right;
     list-style-type: none;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     color: white;
 }
@@ -39,7 +43,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: 45%;
-    margin-top: 0px;
+    margin-top: -30px;
 }
 
 #locations {
@@ -49,6 +53,7 @@
     transform: translateX(-50%);
     margin: 0;
     list-style-type: none;
+    font-size: 20px;
 }
 #locations li {
     padding-left: 40px;
