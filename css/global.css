@@ -8,9 +8,10 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/gateway-of-india.jpg');
+    background-image: url('../images/gateway-of-india.png');
+    background-size: 90% auto;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
     background-attachment: fixed;
     z-index: -2;
 }
@@ -19,55 +20,71 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgb(225, 218, 197);
+    background: #eddfb3;
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     z-index: -1;
 }
 
-#nav-menu {
+#locations {
     position: fixed;
     right: 20px;
     top: 10px;
     margin: 0;
     text-align: right;
     list-style-type: none;
-    font-size: 35px;
+    font-size: 24px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+    color: #4d4d4d;
+}
+#locations li {
+    margin-bottom: 20px;
     font-weight: bold;
-    color: white;
+}
+#locations a {
+    text-decoration: none;
+    font-weight: normal;
+}
+#locations img {
+    width: 20px;
+    margin-bottom: -5px;
+    font-weight: bold;
 }
 
 #logo {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
-    width: 45%;
+    width: 52%;
     margin-top: -30px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
-#locations {
+#nav-menu {
     position: fixed;
-    bottom: 10%;
+    bottom: 8%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    list-style-type: none;
-    font-size: 20px;
+    font-size: 32px;
+    color: #4d4d4d;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
-#locations li {
-    padding-left: 40px;
-    padding-right: 40px;
-    float: left;
-    color: white;
+#nav-menu td {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 }
-#locations a {
-    font-weight: bold;
-    font-size: larger;
+#nav-menu a {
+    text-decoration: none;
+    color: inherit;
 }
-#locations img {
-    width: 20px;
-    display: block;
-    margin-left: -30px;
-    margin-bottom: -32px;
+#nav-menu img {
+    width: 50px;
+}
+table, th, td {
 }
