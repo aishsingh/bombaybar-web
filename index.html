@@ -6,7 +6,7 @@
   <meta name="description" content="Bombay Bar Indian Restaurant in Melbourne">
   <title>Bombay Bar</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/global.css">
 
   <!-- <script src="https://cdn.jsdelivr.net/velocity/1.5/velocity.min.js"></script> -->
@@ -18,12 +18,12 @@
   <div id="bg"></div>
   <ul id="locations">
     <li>
-      <img src="images/pin_dark.gif">&nbsp;
+      <img src="images/pin.gif">&nbsp;
       <a>Emporium Melbourne</a><br>
       <i>03 8609 8147</i>
     </li>
     <li>
-      <img src="images/pin_dark.gif">&nbsp;
+      <img src="images/pin.gif">&nbsp;
       <a>Westfield Doncaster</a><br>
       <i>03 9090 7358</i>
     </li>
@@ -31,18 +31,10 @@
 
   <img id="logo" src="images/logo.gif">
 
-  <table id="nav-menu">
-    <tr>
-      <td><img src="images/Cutlery.png"></td>
-      <td><img src="images/Camera.png"></td>
-      <td><img src="images/Envelope.png"></td>
-      
-    </tr>
-    <tr>
-      <td><a href="#">Food</a></td>
-      <td><a href="#">Gallery</a></td>
-      <td><a href="#">Contact</a></td>
-    </tr>
-  </table>
+  <div id="nav-menu">
+    <a onmouseover="hoverFood()" onmouseleave="leaveFood()" href="#"><img src="images/Cutlery.png" id="ic_food">FOOD</a>
+    <a onmouseover="hoverGallery()" onmouseleave="leaveGallery()" href="#"><img src="images/Camera.png" id="ic_gallery">GALLERY</a>
+    <a onmouseover="hoverAbout()" onmouseleave="leaveAbout()" href="#"><img src="images/Envelope.png" id="ic_about">ABOUT</a>
+  </div>
 </body>
 </html>

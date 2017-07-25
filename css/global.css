@@ -1,7 +1,9 @@
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
-    /* background: rgb(244, 236, 209); */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Muli', sans-serif;
     background: white;
 }
 
@@ -11,8 +13,8 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/gateway-of-india3.png');
-    background-size: 92% auto;
+    background-image: url('../images/tabla.jpg');
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -25,7 +27,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: #eddfb3;
+    background: #4d4d4d;
     opacity: 0.0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
     z-index: -1;
@@ -41,7 +43,7 @@ body {
     font-size: 24px;
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
-    color: #4d4d4d;
+    color: #fff;
 }
 #locations li {
     margin-bottom: 20px;
@@ -62,37 +64,47 @@ body {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    width: 48%;
+    width: 42%;
     margin-top: -30px;
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 #nav-menu {
+    width: 100%;
     position: fixed;
-    bottom: 7%;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-top: 12px;
+    bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
     font-size: 32px;
-    color: #4d4d4d;
+    color: #000;
+    background: #fff;
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
+    text-align: right;
 }
-#nav-menu td {
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    text-align: center;
-}
+
 #nav-menu a {
     text-decoration: none;
     color: inherit;
 }
-#nav-menu img {
-    width: 45px;
+#nav-menu a:hover {
+    color: #efcc82;
 }
-table, th, td {
-    width: 180px;
-    table-layout: fixed;
-    /* border: 1px solid black; */
+#nav-menu a img {
+    width: 45px;
+    margin-top: -5px;
+    padding-left: 15px;
+    padding-right: 12px;
+    vertical-align: text-top;
+}
+#nav-menu #ic_food {
+    padding-right: 3px;
+}
+#nav-menu #ic_food:hover {
+    padding-right: 3px;
 }
