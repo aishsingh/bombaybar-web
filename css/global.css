@@ -1,5 +1,8 @@
 body {
+    margin: 0;
     font-family: 'Lato', sans-serif;
+    /* background: rgb(244, 236, 209); */
+    background: white;
 }
 
 #bg {
@@ -8,12 +11,14 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/gateway-of-india.png');
-    background-size: 91% auto;
+    background-image: url('../images/gateway-of-india3.png');
+    background-size: 92% auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     z-index: -2;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 #bg-tint {
@@ -21,8 +26,8 @@ body {
     width: 100%;
     height: 100%;
     background: #eddfb3;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+    opacity: 0.0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
     z-index: -1;
 }
 
@@ -57,7 +62,7 @@ body {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    width: 52%;
+    width: 48%;
     margin-top: -30px;
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
