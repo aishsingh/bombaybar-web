@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    background: black;
+}
+
+.menu {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 800px;
+    padding-bottom: 20px;
+}
+
+.menu img {
+    width: 930px;
+    height: 380px;
+    margin: 0 -130px 0 -130px;
+    object-fit: cover;
+    /* border: 1px solid grey; */
+}
+.menu #menu-westfield2 {
+    padding-bottom: 50px;
+}
+
+.title {
+    padding-top: 6px;
+    padding-left: 6px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    /* text-decoration: underline; */
+}
+
+hr {
+    color: white;
+    border-width: 1.5px;
+    border-style: solid;
+}

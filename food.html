@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/food.css">
 
   <!-- Core CSS file -->
   <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
@@ -30,12 +31,23 @@
 </head>
 <body>
 
-  <!-- <img id="logo" src="images/logo.gif"> -->
+  <div class="menu">
+    <div class="title">Emporium Melbourne</div>
+    <hr>
+    <img id="menu-emporium1" src="images/menu/emporium1.png">
+    <img id="menu-emporium2" src="images/menu/emporium2.png">
+  </div>
+  <div class="menu">
+    <div class="title">Westfield Doncaster</div>
+    <hr>
+    <img id="menu-westfield1" src="images/menu/westfield1.png">
+    <img id="menu-westfield2" src="images/menu/westfield2.png">
+  </div>
 
   <div id="nav-menu">
-    <a onmouseover="hoverFood()" onmouseleave="leaveFood()" href="food.html"><img src="images/Cutlery.png" id="ic_food">FOOD</a>
-    <a onmouseover="hoverGallery()" onmouseleave="leaveGallery()" href="gallery.html"><img src="images/Camera.png" id="ic_gallery">GALLERY</a>
-    <a onmouseover="hoverAbout()" onmouseleave="leaveAbout()" href="about.html"><img src="images/Envelope.png" id="ic_about">ABOUT</a>
+    <a id="nav_food" onmouseover="hoverFood()" onmouseleave="leaveFood()" href="food.html"><img src="images/Cutlery.png" id="ic_food">FOOD</a>
+    <a id="nav_gallery" onmouseover="hoverGallery()" onmouseleave="leaveGallery()" href="#"><img src="images/Camera.png" id="ic_gallery">GALLERY</a>
+    <a id="nav_about" onmouseover="hoverAbout()" onmouseleave="leaveAbout()" href="#"><img src="images/Envelope.png" id="ic_about">ABOUT</a>
   </div>
 </body>
 </html>
