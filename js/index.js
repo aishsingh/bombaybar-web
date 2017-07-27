@@ -37,4 +37,4 @@ function changeSlideShow() {
     setTimeout(changeSlideShow, 5000);
 }
 
-window.onload = startSlideShow;
+window.addEventListener("load", startSlideShow, true);

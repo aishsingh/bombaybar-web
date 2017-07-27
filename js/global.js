@@ -42,4 +42,4 @@ function leaveAbout() {
     Velocity(document.getElementById("ic_about"), { width: 40 }, { duration: 200 });
 }
 
-window.onload = init;
+window.addEventListener("load", init, true);
