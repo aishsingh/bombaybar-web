@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View pictures of our food and venue.">
+  <title>Gallery | Bombay Bar</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite,
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="bower_components/photoswipe/dist/default-skin/default-skin.css">
+
+  <!-- Core JS file -->
+  <script src="bower_components/photoswipe/dist/photoswipe.min.js"></script>
+
+  <!-- UI JS file -->
+  <script src="bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+  <script src="js/global.js" type="text/javascript"></script>
+  <script src="js/gallery.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <div class="photos">
+    <div class="title">Emporium Melbourne</div>
+    <hr>
+    <img src="images/gallery/emporium1.jpg" onclick="openPhoto(0)">
+    <img src="images/gallery/emporium2.jpg" onclick="openPhoto(1)">
+    <img src="images/gallery/emporium3.jpg" onclick="openPhoto(2)">
+    <img src="images/gallery/emporium4.jpg" onclick="openPhoto(3)">
+    <img src="images/gallery/emporium5.jpg" onclick="openPhoto(4)">
+
+    <div class="title">Westfield Doncaster</div>
+    <hr>
+    <img src="images/gallery/westfield1.jpg" onclick="openPhoto(5)">
+  </div>
+
+  <div id="nav-menu">
+    <a id="nav_logo" onmouseover="hoverLogo()" onmouseleave="leaveLogo()" href="index.html"><img src="images/logo_icon.png" id="ic_logo">HOME</a>
+    <a id="nav_food" onmouseover="hoverFood()" onmouseleave="leaveFood()" href="food.html"><img src="images/Cutlery.png" id="ic_food">FOOD</a>
+    <a id="nav_gallery" onmouseover="hoverGallery()" onmouseleave="leaveGallery()" href="gallery.html"><img src="images/Camera.png" id="ic_gallery">GALLERY</a>
+    <a id="nav_about" onmouseover="hoverAbout()" onmouseleave="leaveAbout()" href="#"><img src="images/Envelope.png" id="ic_about">ABOUT</a>
+  </div>
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp pswp--minimal--dark" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+          <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+          <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+
+                  <div class="pswp__counter"></div>
+
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                  <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader&#45;&#45;active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+              </div>
+
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </body>
+</html>

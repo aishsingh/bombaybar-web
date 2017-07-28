@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    /* background: black; */
+}
+
+.photos {
+    /* text-align: center; */
+    /* padding: 50px; */
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 800px;
+    padding-bottom: 60px;
+}
+
+.photos img {
+    max-width: 280px;
+    max-height: 180px;
+}
+
+.title {
+    padding-top: 6px;
+    padding-left: 6px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    /* color: black; */
+    /* text-decoration: underline; */
+}
+hr {
+    /* color: black; */
+    border-width: 1.5px;
+    border-style: solid;
+}

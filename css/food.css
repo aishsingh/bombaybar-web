@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Muli', sans-serif;
-    background: black;
+    background: white;
 }
 
 .menu {
@@ -16,11 +16,17 @@ body {
 .menu img {
     width: 930px;
     height: 380px;
-    margin: 0 -130px 0 -130px;
+    margin: 0px -130px 0px -130px;
     object-fit: cover;
     /* border: 1px solid grey; */
 }
+
+.menu #menu-emporium2 {
+    margin-top: -5px;
+    /* padding-bottom: 50px; */
+}
 .menu #menu-westfield2 {
+    margin-top: -5px;
     padding-bottom: 50px;
 }
 
@@ -30,12 +36,12 @@ body {
     text-align: left;
     font-size: 26px;
     font-weight: bold;
-    color: white;
+    /* color: white; */
     /* text-decoration: underline; */
 }
 
 hr {
-    color: white;
+    /* color: white; */
     border-width: 1.5px;
     border-style: solid;
 }
