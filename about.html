@@ -3,29 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Take a look at the food we provide. Menu items are listed according to the specific stores they are available in.">
-  <title>Food | Bombay Bar</title>
+  <meta name="description" content="Find out contact information and our store locations">
+  <title>About | Bombay Bar</title>
 
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/global.css">
-  <link rel="stylesheet" type="text/css" href="css/food.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
   <script src="js/global.js" type="text/javascript"></script>
+  <script src="js/about.js" type="text/javascript"></script>
 </head>
 <body>
 
-  <div class="menu">
-    <div class="title">Emporium Melbourne</div>
+  <div id="map"></div>
+  <div id="description">
     <hr>
-    <img id="menu-emporium1" src="images/menu/emporium1.png">
-    <img id="menu-emporium2" src="images/menu/emporium2.png">
-  </div>
-  <div class="menu">
-    <div class="title">Westfield Doncaster</div>
+      Bombay Bar is an upcoming brand of North Indian food outlets. <br>We provide quality food that is comparable to the best fine dining Indian restaurants in Australia.
     <hr>
-    <img id="menu-westfield1" src="images/menu/westfield1.png">
-    <img id="menu-westfield2" src="images/menu/westfield2.png">
   </div>
 
   <div id="nav-menu">
@@ -34,5 +29,9 @@
     <a id="nav_gallery" onmouseover="hoverGallery()" onmouseleave="leaveGallery()" href="gallery.html"><img src="images/Camera.png" id="ic_gallery">GALLERY</a>
     <a id="nav_about" onmouseover="hoverAbout()" onmouseleave="leaveAbout()" href="about.html"><img src="images/Envelope.png" id="ic_about">ABOUT</a>
   </div>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm90ejvlC0aUn_3vM6aVky5HXNZfOPlEc&callback=initMap">
+  </script>
 </body>
 </html>

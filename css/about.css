@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+    height: 100%;
+	padding: 0;
+}
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+	/* width: 800px; */
+	/* width: 100%; */
+    /* height: 100%; */
+
+    position: absolute;
+    top: 78px;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    /* height: 550px; */
+    z-index: -1;
+}
+
+#description {
+    width: 800px;
+    bottom: 75px;
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+    /* position: fixed; */
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1.5px solid black; */
+}
+
+hr {
+    border-width: 1.5px;
+    border-style: solid;
+}
