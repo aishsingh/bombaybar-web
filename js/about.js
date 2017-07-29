@@ -53,8 +53,5 @@ function initMap() {
             infowindow.setContent(locations[0][0]);
             infowindow.open(map, marker);
         }
-
-        // infowindow.setContent(locations[1][0]);
-        // infowindow.open(map, marker);
 	}
 }

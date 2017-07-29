@@ -27,7 +27,9 @@ body {
     color: inherit;
 }
 #nav-menu a:hover {
-    color: #efcc82;
+    /* color: #efcc82; */
+
+    color: #efb639;
 }
 #nav-menu a img {
     width: 40px;

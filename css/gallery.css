@@ -1,17 +1,9 @@
-body {
-    margin: 0;
-    font-family: 'Muli', sans-serif;
-    /* background: black; */
-}
-
 .photos {
-    /* text-align: center; */
     /* padding: 50px; */
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     overflow: hidden;
-    width: 800px;
+    /* width: 800px; */
+    width: 100%;
     padding-bottom: 60px;
 }
 
@@ -21,9 +13,19 @@ body {
 
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: black;
+}
+.photos img:hover {
+    border-color: #efb639;
+    /* border-color: black; */
 }
 
 .title {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 6px;
     padding-left: 6px;
     text-align: left;
@@ -34,6 +36,7 @@ body {
 }
 hr {
     /* color: black; */
+    color: #efb639;
     border-width: 1.5px;
     border-style: solid;
 }
