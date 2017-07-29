@@ -18,6 +18,9 @@ body {
 .photos img {
     max-width: 280px;
     max-height: 180px;
+
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 .title {
