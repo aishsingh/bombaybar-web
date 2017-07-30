@@ -27,31 +27,31 @@ function initMap() {
 
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 12,
-		center: new google.maps.LatLng(-37.793269, 145.023299),
+        center: new google.maps.LatLng((emporium.lat+westfield.lat)/2, (emporium.long+westfield.long)/2),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 
-	var infowindow = new google.maps.InfoWindow({});
 
 	var marker, i;
 
 	for (i = 0; i < locations.length; i++) {
+        var infowindow = new google.maps.InfoWindow({});
 		marker = new google.maps.Marker({
 			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             animation: google.maps.Animation.DROP,
 			map: map
 		});
 
-		google.maps.event.addListener(marker, 'click', (function (marker, i) {
-			return function () {
-				infowindow.setContent(locations[i][0]);
-				infowindow.open(map, marker);
-			}
-		})(marker, i));
+		// google.maps.event.addListener(marker, 'click', (function (marker, i) {
+		// 	return function () {
+		// 		infowindow.setContent(locations[i][0]);
+		// 		infowindow.open(map, marker);
+		// 	}
+		// })(marker, i));
 
-        if (i == 0) {
-            infowindow.setContent(locations[0][0]);
+        // if (i == 0) {
+            infowindow.setContent(locations[i][0]);
             infowindow.open(map, marker);
-        }
+        // }
 	}
 }
