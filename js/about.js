@@ -27,7 +27,8 @@ function initMap() {
 
 	var map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 12,
-        center: new google.maps.LatLng((emporium.lat+westfield.lat)/2, (emporium.long+westfield.long)/2),
+        // center: new google.maps.LatLng((emporium.lat+westfield.lat)/2, (emporium.long+westfield.long)/2),
+        center: new google.maps.LatLng(-37.776405, 145.047296),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
 
