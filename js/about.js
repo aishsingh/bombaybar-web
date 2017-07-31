@@ -2,7 +2,7 @@ function initMap() {
 
 	var emporium = {
         info: '<big><b>Emporium Melbourne</b></big><img src="images/logo_big_icon_dark.png" width="100px" style="float:right"><br>\
-					Level 3 Cafe Court, 287 Lonsdale St, Melbourne VIC 3000<br>\
+					Level 3, Cafe Court, 287 Lonsdale St, Melbourne VIC 3000<br>\
                     <br>\
 					<b>Sat-Wed:</b> 10:00am - 7:00pm<br>\
 					<b>Thur-Fri:</b> 10:00am - 9:00pm<br>',
@@ -12,7 +12,7 @@ function initMap() {
 
 	var westfield = {
 		info: '<big><b>Westfield Doncaster</b></big><img src="images/logo_big_icon_dark.png" width="100px" style="float:right"><br>\
-					Level 1 Food Court, 619 Doncaster Rd, Doncaster VIC 3108<br>\
+					Level 1, Food Court, 619 Doncaster Rd, Doncaster VIC 3108<br>\
                     <br>\
 					<b>Sat-Wed:</b> 10:00am - 5:00pm<br>\
 					<b>Thur-Fri:</b> 10:00am - 9:00pm<br>',

@@ -90,3 +90,40 @@
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
+
+.indicators {
+    width: 100%;
+    position: fixed;
+    left: 46%;
+    bottom: 14%;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.indicators li {
+    float: left;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.indicators li div {
+    width: 18px;
+    height: 7px;
+    /* position: absolute; */
+    border-radius: 5px;
+    border-color: white;
+    border-size: 4px;
+    border-style: solid;
+    /* background-color: black; */
+}
+#slide_indicator1 {
+    background-color: black;
+}
+#slide_indicator2 {
+    background-color: white;
+}
+#slide_indicator3 {
+    background-color: white;
+}
