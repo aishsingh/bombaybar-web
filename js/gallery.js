@@ -1,14 +1,33 @@
+var photosAnimated;
 function animateGallery() {
-  var gallery = document.getElementsByClassName("photos")[0].getElementsByTagName("img");
+    photosAnimated = false;
+    var gallery = document.getElementsByClassName("photos")[0].getElementsByTagName("img");
+    
+    for (var i = 0; i < gallery.length; i++) {
+        Velocity(gallery[i], { scale: 0.7 }, { duration: 0 });
+    }
+    
+    for (var i = 0; i < gallery.length; i++) {
+        Velocity(gallery[i], { opacity: 1 }, { delay: i*100, duration: 1000 });
 
-  for (var i = 0; i < gallery.length; i++) {
-    Velocity(gallery[i], { scale: 0.8 }, { duration: 0 });
-  }
+        if (i < gallery.length-1)
+            Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300 });
+        else
+            Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300, complete: function(){photosAnimated = true;} });
+    }
+}
 
-  for (var i = 0; i < gallery.length; i++) {
-    Velocity(gallery[i], { opacity: 1 }, { delay: i*100, duration: 1000 });
-    Velocity(gallery[i], { scale: 1 }, { delay: 50, duration: 300 });
-  }
+function hoverPhoto(id) {
+    if (photosAnimated) {
+        var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
+        Velocity(photo, { scale: 1.04 }, { duration: 300 });
+    }
+}
+function leavePhoto(id) {
+    if (photosAnimated) {
+        var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
+        Velocity(photo, { scale: 0.95 }, { duration: 300 });
+    }
 }
 
 function openPhoto(id) {

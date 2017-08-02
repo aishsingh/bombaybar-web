@@ -16,10 +16,7 @@
     border-style: solid;
     border-width: 1.5px;
     border-color: black;
-}
-.photos img:hover {
-    border-color: #efb639;
-    /* border-color: black; */
+    z-index: -1;
 }
 
 .title {
