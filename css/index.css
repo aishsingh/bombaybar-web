@@ -111,20 +111,19 @@
 
 .indicators li {
     float: left;
-    padding-left: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-align: center;
     opacity: 0;
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 .indicators li div {
-    width: 18px;
+    width: 15px;
     height: 6px;
     /* position: absolute; */
-    border-radius: 5px;
-    border-color: white;
-    border-size: 4px;
-    border-style: solid;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 4px rgba(255,255,255,0.4);
     /* background-color: black; */
 }
 #slide_indicator1 {
