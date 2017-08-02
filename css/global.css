@@ -8,23 +8,20 @@ body {
     width: 100%;
     position: fixed;
     padding-bottom: 10px;
-    /* padding-right: 40px; */
     padding-top: 12px;
     bottom: 0%;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 0;
     font-size: 25px;
     color: #000;
     background: #fff;
-    opacity: 0;
-    filter: alpha(opacity=0); /* For IE8 and earlier */
     text-align: center;
 }
 
 #nav-menu a {
     text-decoration: none;
     color: inherit;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 #nav-menu a:hover {
     /* color: #efcc82; */
@@ -37,6 +34,8 @@ body {
     padding-left: 15px;
     padding-right: 12px;
     vertical-align: text-top;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 #nav-menu #ic_food {
     padding-right: 3px;

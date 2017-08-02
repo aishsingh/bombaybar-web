@@ -69,13 +69,13 @@
     text-align: right;
     list-style-type: none;
     font-size: 20px;
-    opacity: 1;
-    filter: alpha(opacity=1); /* For IE8 and earlier */
     color: #fff;
 }
 #locations li {
     margin-bottom: 22px;
     font-weight: bold;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 #locations a {
     text-decoration: none;
@@ -106,7 +106,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
     list-style-type: none;
-    overflow: hidden;
     padding: 0px;
 }
 
@@ -114,6 +113,8 @@
     float: left;
     padding-left: 15px;
     text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 .indicators li div {

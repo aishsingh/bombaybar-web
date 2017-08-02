@@ -3,7 +3,22 @@ var slide_timer;
 var slide_interval;
 function startSlideShow() {
     resizeSlideShow();
+
     Velocity(document.getElementById("bg-tint"), { opacity: 1.0 }, { duration: 1000 });
+
+    // Locations
+    var locations = document.getElementById("locations").getElementsByTagName("li");
+    for (var i = 0; i < locations.length; i++)
+        Velocity(locations[i], { translateX: "50px" }, { duration: 0 });
+    for (var i = 0; i < locations.length; i++)
+        Velocity(locations[i], { opacity: 1, translateX: "0px" }, { delay: (1000)+(i*200), duration: 1000 });
+
+    // Indicator
+    var indicator = document.getElementsByClassName("indicators")[0].getElementsByTagName("li");
+    for (var i = 0; i < indicator.length; i++)
+        Velocity(indicator[i], { translateY: "20px" }, { duration: 0 });
+    for (var i = 0; i < indicator.length; i++)
+        Velocity(indicator[i], { opacity: 1, translateY: "0px" }, { delay: (1400)+(indicator.length-1-i)*100, duration: 500 });
 
     next_slide = 1;
     slide_interval = 5000;
@@ -84,13 +99,14 @@ function resetToSlide(slide) {
 function resizeSlideShow() {
     if (width < 500) {
         document.getElementById("logo").style.width = "80%";
-        document.getElementById("nav-menu").style.paddingTop = "0px";
     } else if (width < 1100) {
-        document.getElementById("logo").style.width = "65%";
-        document.getElementById("nav-menu").style.paddingTop = "12px";
+        if (height <= 400) {
+            document.getElementById("logo").style.width = "45%";
+        } else {
+            document.getElementById("logo").style.width = "65%";
+        }
     } else {
         document.getElementById("logo").style.width = "42%";
-        document.getElementById("nav-menu").style.paddingTop = "12px";
     }
 
 }
