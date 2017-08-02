@@ -20,13 +20,13 @@ function animateGallery() {
 function hoverPhoto(id) {
     if (photosAnimated) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
-        Velocity(photo, { scale: 1.04 }, { duration: 300 });
+        Velocity(photo, { scale: 1.04 }, { duration: 200 });
     }
 }
 function leavePhoto(id) {
     if (photosAnimated) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
-        Velocity(photo, { scale: 0.95 }, { duration: 300 });
+        Velocity(photo, { scale: 0.95 }, { duration: 200 });
     }
 }
 

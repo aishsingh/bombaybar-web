@@ -2,41 +2,74 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
-    width: 800px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
     padding-bottom: 20px;
 }
 
+.menu .wrapper {
+    width: 658px;
+    height: 695px;
+    overflow: hidden;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
 .menu img {
-    width: 930px;
-    height: 380px;
-    margin: 0px -130px 0px -130px;
-    object-fit: cover;
-    /* border: 1px solid grey; */
+    width: 768px;
+    height: 432px;
+    /* position: absolute; */
+    clip-path: inset(55px 55px 55px 55px);
+    margin: -55px -60px -60px -55px;
+    /* padding: -55px -25px -60px -55px; */
 }
 
 .menu #menu-emporium2 {
-    margin-top: -5px;
-    /* padding-bottom: 50px; */
+    overflow: visible;
+    background-color: black;
+    /* margin-top: -60px; */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 .menu #menu-westfield2 {
-    margin-top: -5px;
-    padding-bottom: 50px;
+    /* margin-top: -5px; */
+    /* padding-bottom: 50px; */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.title {
+#title1 {
+    background: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
     padding-top: 6px;
     padding-left: 6px;
     text-align: left;
     font-size: 26px;
     font-weight: bold;
-    /* color: white; */
-    /* text-decoration: underline; */
+}
+#title2 {
+    background: white;
+    max-width: 800px;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5px;
+    padding-top: 12px;
+    /* padding-left: 6px; */
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 hr {
     /* color: white; */
     color: #efb639;
+    /* max-width: 800px; */
     border-width: 1.5px;
     border-style: solid;
 }
