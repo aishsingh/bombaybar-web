@@ -8,7 +8,7 @@ body {
     width: 100%;
     position: fixed;
     padding-bottom: 10px;
-    padding-right: 40px;
+    /* padding-right: 40px; */
     padding-top: 12px;
     bottom: 0%;
     left: 50%;
@@ -44,8 +44,4 @@ body {
 #nav-menu #ic_logo {
     width: 55px;
 }
-/* #nav-menu #nav_logo { */
-/*     float: left; */
-/*     margin-left: 12px; */
-/*     margin-right: 5px; */
-/* } */
+

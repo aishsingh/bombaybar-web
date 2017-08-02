@@ -1,4 +1,9 @@
+var width;
+var height;
+
 function init() {
+    resizePage();
+
     Velocity(document.getElementById("nav-menu"), { translateX: "-50%", translateY: 0 }, { stagger: 500, duration: 0 });
     Velocity(document.getElementById("nav-menu"), { translateX: "-50%", translateY: 0, opacity: 1.0 }, { duration: 500 });
 }
@@ -55,4 +60,23 @@ function leaveAbout() {
     Velocity(document.getElementById("ic_about"), { width: 40 }, { duration: 200 });
 }
 
+
+function resizePage() {
+    width = window.outerWidth;
+    height = window.outerHeight;
+
+    if (width < 500) {
+        if (!!document.getElementById("nav_logo")) document.getElementById("nav_logo").style.fontSize = "0";
+        document.getElementById("nav_food").style.fontSize = "0";
+        document.getElementById("nav_gallery").style.fontSize = "0";
+        document.getElementById("nav_about").style.fontSize = "0";
+    } else {
+        if (!!document.getElementById("nav_logo")) document.getElementById("nav_logo").style.fontSize = "25px";
+        document.getElementById("nav_food").style.fontSize = "25px";
+        document.getElementById("nav_gallery").style.fontSize = "25px";
+        document.getElementById("nav_about").style.fontSize = "25px";
+    }
+}
+
 window.addEventListener("load", init, true);
+window.addEventListener("resize", resizePage, true);
