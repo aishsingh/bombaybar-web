@@ -80,6 +80,12 @@
 #locations a {
     text-decoration: none;
     font-weight: normal;
+    color: #fff;
+}
+#locations a:link {
+    text-decoration: none;
+    font-weight: normal;
+    color: #fff;
 }
 #locations img {
     width: 20px;
