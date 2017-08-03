@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/slides/tabla.jpg');
+    /* background-image: url('../images/slides/tabla.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -19,7 +19,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/slides/emporium.jpg');
+    /* background-image: url('../images/slides/emporium.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -34,7 +34,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/slides/westfield.jpg');
+    /* background-image: url('../images/slides/westfield.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
