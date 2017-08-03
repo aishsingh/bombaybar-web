@@ -97,12 +97,12 @@ function resetToSlide(slide) {
 }
 
 function resizeSlideShow() {
-    if (width < 500) {
+    if (width <= 500) {
         document.getElementById("logo").style.width = "80%";
         document.getElementById("slide1").style.backgroundImage = "url('images/slides/small/tabla.jpg')";
         document.getElementById("slide2").style.backgroundImage = "url('images/slides/small/emporium.jpg')";
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/small/westfield.jpg')";
-    } else if (width < 1100) {
+    } else if (width <= 1100) {
         if (height <= 400) {
             document.getElementById("logo").style.width = "45%";
         } else {
