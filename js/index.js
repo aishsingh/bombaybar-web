@@ -60,7 +60,7 @@ function changeSlide(slide) {
         }
 
         Velocity(document.getElementById("loc_emporium"), { opacity: 1.0 }, { duration: 1000 });
-        Velocity(document.getElementById("loc_westfield"), { opacity: 0.3 }, { duration: 1000 });
+        Velocity(document.getElementById("loc_westfield"), { opacity: 0.2 }, { duration: 1000 });
         next_slide = 3;
     } else if (slide == 3) {
         if (parseFloat(document.getElementById("logo").style.opacity) > 0) {
@@ -82,7 +82,7 @@ function changeSlide(slide) {
         }
 
 
-        Velocity(document.getElementById("loc_emporium"), { opacity: 0.3 }, { duration: 1000 });
+        Velocity(document.getElementById("loc_emporium"), { opacity: 0.2 }, { duration: 1000 });
         Velocity(document.getElementById("loc_westfield"), { opacity: 1.0 }, { duration: 1000 });
         next_slide = 1;
     }
@@ -99,14 +99,23 @@ function resetToSlide(slide) {
 function resizeSlideShow() {
     if (width < 500) {
         document.getElementById("logo").style.width = "80%";
+        document.getElementById("slide1").style.backgroundImage = "url('images/slides/small/tabla.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/small/emporium.jpg')";
+        document.getElementById("slide3").style.backgroundImage = "url('images/slides/small/westfield.jpg')";
     } else if (width < 1100) {
         if (height <= 400) {
             document.getElementById("logo").style.width = "45%";
         } else {
             document.getElementById("logo").style.width = "65%";
         }
+        document.getElementById("slide1").style.backgroundImage = "url('images/slides/tabla.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium.jpg')";
+        document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     } else {
         document.getElementById("logo").style.width = "42%";
+        document.getElementById("slide1").style.backgroundImage = "url('images/slides/tabla.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium.jpg')";
+        document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     }
 
 }
