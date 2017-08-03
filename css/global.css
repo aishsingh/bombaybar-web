@@ -38,9 +38,12 @@ body {
     filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 #nav-menu #ic_food {
-    padding-right: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 #nav-menu #ic_logo {
-    width: 55px;
+    width: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 

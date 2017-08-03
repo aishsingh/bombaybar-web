@@ -45,7 +45,7 @@ function leaveLogo() {
 
 function hoverFood() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_food").src='images/Cutlery_colour.png';
+        document.getElementById("ic_food").src='images/cutlery_colour.png';
         // Velocity(document.getElementById("nav_food"), { color: '#efcc82' }, { duration: 0 });
         Velocity(document.getElementById("nav_food"), { fontSize: 32 }, { duration: 300 });
         Velocity(document.getElementById("ic_food"), { width: 45 }, { duration: 300 });
@@ -53,7 +53,7 @@ function hoverFood() {
 }
 function leaveFood() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_food").src='images/Cutlery.png';
+        document.getElementById("ic_food").src='images/cutlery.png';
         // Velocity(document.getElementById("nav_food"), { color: '#000' }, { duration: 0 });
         Velocity(document.getElementById("nav_food"), { fontSize: 25 }, { duration: 200 });
         Velocity(document.getElementById("ic_food"), { width: 40 }, { duration: 200 });
@@ -62,7 +62,7 @@ function leaveFood() {
 
 function hoverGallery() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_gallery").src='images/Camera_colour.png';
+        document.getElementById("ic_gallery").src='images/camera_colour.png';
         // Velocity(document.getElementById("nav_gallery"), { color: '#efcc82' }, { duration: 0 });
         Velocity(document.getElementById("nav_gallery"), { fontSize: 32 }, { duration: 300 });
         Velocity(document.getElementById("ic_gallery"), { width: 45 }, { duration: 300 });
@@ -70,7 +70,7 @@ function hoverGallery() {
 }
 function leaveGallery() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_gallery").src='images/Camera.png';
+        document.getElementById("ic_gallery").src='images/camera.png';
         // Velocity(document.getElementById("nav_gallery"), { color: '#000' }, { duration: 0 });
         Velocity(document.getElementById("nav_gallery"), { fontSize: 25 }, { duration: 200 });
         Velocity(document.getElementById("ic_gallery"), { width: 40 }, { duration: 200 });
@@ -79,7 +79,7 @@ function leaveGallery() {
 
 function hoverAbout() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_about").src='images/Envelope_colour.png';
+        document.getElementById("ic_about").src='images/envelope_colour.png';
         // Velocity(document.getElementById("nav_about"), { color: '#efcc82' }, { duration: 0 });
         Velocity(document.getElementById("nav_about"), { fontSize: 32 }, { duration: 300 });
         Velocity(document.getElementById("ic_about"), { width: 45 }, { duration: 300 });
@@ -87,7 +87,7 @@ function hoverAbout() {
 }
 function leaveAbout() {
     if (navmenuAnimated && width > 500) {
-        document.getElementById("ic_about").src='images/Envelope.png';
+        document.getElementById("ic_about").src='images/envelope.png';
         // Velocity(document.getElementById("nav_about"), { color: '#000' }, { duration: 0 });
         Velocity(document.getElementById("nav_about"), { fontSize: 25 }, { duration: 200 });
         Velocity(document.getElementById("ic_about"), { width: 40 }, { duration: 200 });
