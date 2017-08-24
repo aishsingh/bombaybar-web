@@ -11,22 +11,22 @@ function animateGallery() {
         Velocity(gallery[i], { opacity: 1 }, { delay: i*100, duration: 1000 });
 
         if (i < gallery.length-1)
-            Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300 });
+            Velocity(gallery[i], { scale: 0.97 }, { delay: 50, duration: 300 });
         else
-            Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300, complete: function(){photosAnimated = true;} });
+            Velocity(gallery[i], { scale: 0.97 }, { delay: 50, duration: 300, complete: function(){photosAnimated = true;} });
     }
 }
 
 function hoverPhoto(id) {
     if (photosAnimated) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
-        Velocity(photo, { scale: 1.04 }, { duration: 200 });
+        Velocity(photo, { scale: 1.00 }, { duration: 200 });
     }
 }
 function leavePhoto(id) {
     if (photosAnimated) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
-        Velocity(photo, { scale: 0.95 }, { duration: 200 });
+        Velocity(photo, { scale: 0.97 }, { duration: 200 });
     }
 }
 

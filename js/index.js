@@ -148,8 +148,8 @@ function resizeSlideShow() {
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     } else {
         document.getElementById("logo").style.width = "42%";
-        document.getElementById("slide1").style.backgroundImage = "url('images/slides/tabla.jpg')";
-        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium.jpg')";
+        document.getElementById("slide1").style.backgroundImage = "url('images/gallery/beef_vindaloo.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/gallery/emporium2.jpg')";
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     }
 
