@@ -8,7 +8,7 @@ function animateGallery() {
     }
     
     for (var i = 0; i < gallery.length; i++) {
-        Velocity(gallery[i], { opacity: 0.6 }, { delay: i*50, duration: 300 });
+        Velocity(gallery[i], { opacity: 0.8 }, { delay: i*50, duration: 300 });
 
         if (i < gallery.length-1)
             Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300 });
@@ -28,7 +28,7 @@ function leavePhoto(id) {
     // if (photosAnimated) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
         Velocity(photo, { scale: 0.95 }, { duration: 200 });
-        Velocity(photo, { opacity: 0.6 }, { duration: 300 });
+        Velocity(photo, { opacity: 0.8 }, { duration: 300 });
     // }
 }
 
