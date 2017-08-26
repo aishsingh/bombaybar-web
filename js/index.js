@@ -134,8 +134,8 @@ function resetToSlide(slide) {
 function resizeSlideShow() {
     if (width <= 500) {
         document.getElementById("logo").style.width = "80%";
-        document.getElementById("slide1").style.backgroundImage = "url('images/slides/small/tabla.jpg')";
-        document.getElementById("slide2").style.backgroundImage = "url('images/slides/small/emporium.jpg')";
+        document.getElementById("slide1").style.backgroundImage = "url('images/slides/small/beef_vindaloo.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/small/emporium2.jpg')";
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/small/westfield.jpg')";
     } else if (width <= 1100) {
         if (height <= 400) {
@@ -143,13 +143,13 @@ function resizeSlideShow() {
         } else {
             document.getElementById("logo").style.width = "65%";
         }
-        document.getElementById("slide1").style.backgroundImage = "url('images/slides/tabla.jpg')";
-        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium.jpg')";
+        document.getElementById("slide1").style.backgroundImage = "url('images/slides/beef_vindaloo.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium2.jpg')";
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     } else {
         document.getElementById("logo").style.width = "42%";
         document.getElementById("slide1").style.backgroundImage = "url('images/gallery/beef_vindaloo.jpg')";
-        document.getElementById("slide2").style.backgroundImage = "url('images/gallery/emporium2.jpg')";
+        document.getElementById("slide2").style.backgroundImage = "url('images/slides/emporium2.jpg')";
         document.getElementById("slide3").style.backgroundImage = "url('images/slides/westfield.jpg')";
     }
 
