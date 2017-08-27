@@ -2,9 +2,7 @@ var photosAnimated;
 var hoverPhotos;
 function animateGallery() {
     photosAnimated = false;
-
-    width = window.outerWidth;
-    hoverPhotos = (width <= 500) ? false : true;
+    resizeGallery();
 
     var gallery = document.getElementsByClassName("photos")[0].getElementsByTagName("img");
     
@@ -225,16 +223,11 @@ function openPhoto(catagory,id) {
     gallery.init();
 };
 
-function resizePage() {
+function resizeGallery() {
     width = window.outerWidth;
-    height = window.outerHeight;
-
-    // var images = document.getElementsByTagName("nav_food");
-    // for (var i = 0; i < images.length; i++) images[i].style.opacity = "1";
-
     hoverPhotos = (width <= 500) ? false : true;
 }
 
 
 window.addEventListener("load", animateGallery, true);
-window.addEventListener("resize", resizePage, true);
+window.addEventListener("resize", resizeGallery, true);
