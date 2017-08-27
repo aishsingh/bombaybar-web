@@ -1,6 +1,11 @@
 var photosAnimated;
+var hoverPhotos;
 function animateGallery() {
     photosAnimated = false;
+
+    width = window.outerWidth;
+    hoverPhotos = (width <= 500) ? false : true;
+
     var gallery = document.getElementsByClassName("photos")[0].getElementsByTagName("img");
     
     for (var i = 0; i < gallery.length; i++) {
@@ -8,7 +13,8 @@ function animateGallery() {
     }
     
     for (var i = 0; i < gallery.length; i++) {
-        Velocity(gallery[i], { opacity: 0.8 }, { delay: i*50, duration: 300 });
+        var opacity = (hoverPhotos) ? 0.8 : 1;
+        Velocity(gallery[i], { opacity: opacity }, { delay: i*50, duration: 300 });
 
         if (i < gallery.length-1)
             Velocity(gallery[i], { scale: 0.95 }, { delay: 50, duration: 300 });
@@ -18,18 +24,18 @@ function animateGallery() {
 }
 
 function hoverPhoto(id) {
-    // if (photosAnimated) {
+    if (hoverPhotos) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
         Velocity(photo, { scale: 1 }, { duration: 200 });
         Velocity(photo, { opacity: 1 }, { duration: 300 });
-    // }
+    }
 }
 function leavePhoto(id) {
-    // if (photosAnimated) {
+    if (hoverPhotos) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
         Velocity(photo, { scale: 0.95 }, { duration: 200 });
         Velocity(photo, { opacity: 0.8 }, { duration: 300 });
-    // }
+    }
 }
 
 function openPhoto(catagory,id) {
@@ -219,4 +225,16 @@ function openPhoto(catagory,id) {
     gallery.init();
 };
 
+function resizePage() {
+    width = window.outerWidth;
+    height = window.outerHeight;
+
+    // var images = document.getElementsByTagName("nav_food");
+    // for (var i = 0; i < images.length; i++) images[i].style.opacity = "1";
+
+    hoverPhotos = (width <= 500) ? false : true;
+}
+
+
 window.addEventListener("load", animateGallery, true);
+window.addEventListener("resize", resizePage, true);
