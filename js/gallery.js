@@ -11,7 +11,7 @@ function animateGallery() {
     }
     
     for (var i = 0; i < gallery.length; i++) {
-        var opacity = (hoverPhotos) ? 0.8 : 1;
+        var opacity = (hoverPhotos) ? 0.87 : 1;
         Velocity(gallery[i], { opacity: opacity }, { delay: i*50, duration: 300 });
 
         if (i < gallery.length-1)
@@ -32,7 +32,7 @@ function leavePhoto(id) {
     if (hoverPhotos) {
         var photo = document.getElementsByClassName("photos")[0].getElementsByTagName("img")[id];
         Velocity(photo, { scale: 0.95 }, { duration: 200 });
-        Velocity(photo, { opacity: 0.8 }, { duration: 300 });
+        Velocity(photo, { opacity: 0.87 }, { duration: 300 });
     }
 }
 
