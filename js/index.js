@@ -35,6 +35,26 @@ function loadSlideShow() {
         loaded_slide3 = true;
         if (loaded_slide1 && loaded_slide2 && loaded_slide3 && !slides_started) startSlideShow();
     });
+
+
+    // Touch recognition
+    var hammertime = new Hammer(document.getElementsByClassName("slides")[0]);
+    hammertime.on('swipeleft', function(ev) {
+        resetToSlide(next_slide);
+        // console.log(ev);
+    });
+    hammertime.on('swiperight', function(ev) {
+        // Apparently JS % operator is not a modulo func but a remainder func so its more simple to just hardcode
+        // resetToSlide(((next_slide-3)%(3))+1);
+        // console.log(ev);
+        if (next_slide == 1)
+            resetToSlide(2);
+        else if (next_slide == 2)
+            resetToSlide(3);
+        else if (next_slide == 3)
+            resetToSlide(1);
+
+    });
 }
 
 function startSlideShow() {
